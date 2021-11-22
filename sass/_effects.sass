@@ -1,0 +1,17 @@
+.header
+  &-button:hover
+    border: 3px solid #fff
+    background-color: rgba(0, 91, 170, 0.1)
+  &-top
+    &_tel:hover
+      text-decoration: underline
+
+// отключаем эффекты на планшетах
+@media (max-width: 780px)
+  .header
+    &-button:hover
+      border: none
+      background-color: #005BAA
+    &-top
+      &_tel:hover
+        text-decoration: none
