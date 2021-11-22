@@ -1,10 +1,14 @@
 .header
   &-button:hover
     border: 3px solid #fff
-    background-color: rgba(0, 91, 170, 0.1)
+    background-color: rgba(0, 91, 170, 0.068)
+  &-button:active
+    font-weight: normal
   &-top
     &_tel:hover
       text-decoration: underline
+    &_tel:active
+      color: rgba(255, 255, 255, 0.5)
 
 // отключаем эффекты на планшетах
 @media (max-width: 780px)
@@ -12,6 +16,10 @@
     &-button:hover
       border: none
       background-color: #005BAA
+    &-button:active
+      font-weight: bold
     &-top
       &_tel:hover
         text-decoration: none
+      &_tel:active
+        color: #fff
