@@ -524,12 +524,12 @@ button {
 
 @media (max-width: 1150px) and (max-height: 700px) {
   h1 {
-    font-size: 40px;
-    line-height: 49px;
+    font-size: 34px;
+    line-height: 41px;
   }
   h2 {
-    font-size: 32px;
-    line-height: 39px;
+    font-size: 28px;
+    line-height: 34px;
   }
   .button {
     height: 55px;
@@ -541,12 +541,12 @@ button {
     height: 65px;
   }
   .header-content_time {
-    font-size: 26px;
-    line-height: 32px;
+    font-size: 24px;
+    line-height: 29px;
   }
   .header-content_text {
-    font-size: 26px;
-    line-height: 32px;
+    font-size: 24px;
+    line-height: 29px;
   }
 }
 
