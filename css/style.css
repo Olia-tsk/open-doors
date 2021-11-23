@@ -571,13 +571,106 @@ button {
   line-height: 29px;
 }
 
+.event {
+  margin-bottom: 60px;
+}
+
+.event-title {
+  text-transform: uppercase;
+  color: #005BAA;
+}
+
+.event-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.event-items_item {
+  width: 272px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.event-items_img {
+  width: 95px;
+}
+
+.event-items_text {
+  margin-top: 15px;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.event-items_arrow {
+  width: 35px;
+  height: 35px;
+}
+
+.event-buttons {
+  margin-top: 50px;
+  margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.event-button {
+  width: 420px;
+}
+
+.event-button_icon {
+  height: 47px;
+  width: 44px;
+  margin-right: 15px;
+  fill: #ffffff;
+}
+
+.event-button--youtube {
+  position: relative;
+  background-color: #FF5A5A;
+}
+
+.event-text {
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+}
+
+.event-text_line {
+  margin-bottom: 25px;
+}
+
+.event-text_line--bold {
+  font-weight: bold;
+}
+
+.button:active {
+  font-weight: normal;
+}
+
 .header-button:hover {
   border: 3px solid #fff;
   background-color: rgba(0, 91, 170, 0.068);
-}
-
-.header-button:active {
-  font-weight: normal;
 }
 
 .header-top_tel:hover {
@@ -594,17 +687,29 @@ button {
   color: #fff;
 }
 
-.about-button:active {
-  font-weight: normal;
+.event-button--register:hover {
+  border: 3px solid #005BAA;
+  background-color: #fff;
+  color: #005BAA;
+}
+
+.event-button--youtube:hover {
+  border: 3px solid #FF5A5A;
+  background-color: #fff;
+  color: #FF5A5A;
+}
+
+.event-button--youtube:hover .event-button_icon {
+  fill: #FF5A5A;
 }
 
 @media (max-width: 780px) {
+  .button:active {
+    font-weight: bold;
+  }
   .header-button:hover {
     border: none;
     background-color: #005BAA;
-  }
-  .header-button:active {
-    font-weight: bold;
   }
   .header-top_tel:hover {
     text-decoration: none;
@@ -612,13 +717,23 @@ button {
   .header-top_tel:active {
     color: #fff;
   }
-  -button:hover {
+  .about-button:hover {
     border: none;
     background-color: #fff;
     color: #005BAA;
   }
-  -button:active {
-    font-weight: bold;
+  .event-button--register:hover {
+    border: none;
+    background-color: #005BAA;
+    color: #fff;
+  }
+  .event-button--youtube:hover {
+    border: none;
+    background-color: #FF5A5A;
+    color: #fff;
+  }
+  .event-button--youtube:hover .event-button_icon {
+    fill: #fff;
   }
 }
 
