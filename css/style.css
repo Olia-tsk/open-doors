@@ -374,6 +374,15 @@ h2 {
   font-weight: normal;
 }
 
+h3 {
+  margin: 0;
+  font-size: 40px;
+  line-height: 49px;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
 button {
   cursor: pointer;
 }
@@ -480,6 +489,64 @@ button {
 
 .header-button {
   margin-top: 30px;
+}
+
+.expectations-layout {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.expectations-layout_cell {
+  padding: 20px;
+}
+
+.expectations-layout_cell--image {
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.expectations-layout_cell--image-1 {
+  background-image: url("../img/expectations_img_1.PNG");
+}
+
+.expectations-layout_cell--image-2 {
+  background-image: url("../img/expectations_img_2.PNG");
+}
+
+.expectations-layout_cell--image-3 {
+  background-image: url("../img/expectations_img_3.PNG");
+  background-position: center right;
+}
+
+.expectations-layout_cell--image-4 {
+  background-image: url("../img/expectations_img_4.PNG");
+}
+
+.expectations-layout_cell-title {
+  margin-bottom: 15px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.expectations-layout_cell-text {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.expectations-layout_list {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.expectations-layout_list-item {
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .header-button:hover {

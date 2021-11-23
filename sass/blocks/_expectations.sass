@@ -1,0 +1,35 @@
+.expectations
+  &-layout
+    width: 100%
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    &_cell
+      padding: 20px
+      &--image
+        padding: 0
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+      &--image-1
+        background-image: url('../img/expectations_img_1.PNG')
+      &--image-2
+        background-image: url('../img/expectations_img_2.PNG')
+      &--image-3
+        background-image: url('../img/expectations_img_3.PNG')
+        background-position: center right
+      &--image-4
+        background-image: url('../img/expectations_img_4.PNG')
+      &-title
+        margin-bottom: 15px
+        font-size: 20px
+        line-height: 24px
+        font-weight: bold
+      &-text
+        font-size: 18px
+        line-height: 22px
+    &_list
+      padding-left: 20px
+      margin: 0
+      &-item
+        font-size: 18px
+        line-height: 22px
