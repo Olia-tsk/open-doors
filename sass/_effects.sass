@@ -10,6 +10,14 @@
     &_tel:active
       color: rgba(255, 255, 255, 0.5)
 
+.about
+  &-button:hover
+    border: 3px solid #fff
+    background-color: rgba(0, 91, 170, 0.068)
+    color: #fff
+  &-button:active
+    font-weight: normal
+
 // отключаем эффекты на планшетах
 @media (max-width: 780px)
   .header
@@ -23,3 +31,11 @@
         text-decoration: none
       &_tel:active
         color: #fff
+
+  .about
+  &-button:hover
+    border: none
+    background-color: #fff
+    color: #005BAA
+  &-button:active
+    font-weight: bold
