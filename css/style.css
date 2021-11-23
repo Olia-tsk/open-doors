@@ -484,7 +484,6 @@ button {
 .header-content_text {
   font-size: 30px;
   line-height: 37px;
-  font-style: italic;
 }
 
 .header-button {
@@ -592,6 +591,26 @@ button {
   .container--flex {
     height: 70%;
   }
+  .expectations-layout {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .expectations-layout_cell--image {
+    min-height: 233px;
+  }
+  .expectations-layout_cell--image-2 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+  }
+  .expectations-layout_cell--image-3 {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    background-position: center top;
+  }
 }
 
 @media (max-width: 1400px) and (max-height: 700px) {
@@ -628,6 +647,10 @@ button {
     line-height: 49px;
   }
   h2 {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  h3 {
     font-size: 32px;
     line-height: 39px;
   }
@@ -674,6 +697,10 @@ button {
     font-size: 28px;
     line-height: 34px;
   }
+  h3 {
+    font-size: 28px;
+    line-height: 34px;
+  }
   .button {
     font-size: 18px;
     line-height: 22px;
@@ -696,6 +723,18 @@ button {
   .header-button {
     width: 250px;
   }
+  .expectations-layout_cell-title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .expectations-layout_cell-text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .expectations-layout_list-item {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -706,6 +745,12 @@ button {
   h2 {
     font-size: 22px;
     line-height: 27px;
+  }
+  h3 {
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 5px;
+    margin-top: 40px;
   }
   .button {
     font-size: 16px;
@@ -729,6 +774,37 @@ button {
   .header-button {
     width: 220px;
   }
+  .expectations-layout {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .expectations-layout_cell--image {
+    background-position: center top;
+  }
+  .expectations-layout_cell--image-1 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+  }
+  .expectations-layout_cell--image-2 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+  }
+  .expectations-layout_cell--image-3 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 6;
+        grid-row-start: 6;
+  }
+  .expectations-layout_cell--image-4 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 8;
+        grid-row-start: 8;
+  }
 }
 
 @media (max-width: 460px) {
@@ -737,6 +813,10 @@ button {
     line-height: 29px;
   }
   h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  h3 {
     font-size: 20px;
     line-height: 24px;
   }
@@ -770,16 +850,30 @@ button {
   .header-button {
     width: 180px;
   }
+  .expectations-layout_cell {
+    padding: 15px;
+  }
+  .expectations-layout_cell-title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .expectations-layout_cell-text {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .expectations-layout_cell--image {
+    min-height: 200px;
+  }
+  .expectations-layout_list-item {
+    font-size: 14px;
+    line-height: 17px;
+  }
 }
 
 @media (max-width: 375px) {
   h1 {
     font-size: 18px;
     line-height: 22px;
-  }
-  h2 {
-    font-size: 20px;
-    line-height: 24px;
   }
   .button {
     font-size: 12px;
@@ -803,6 +897,9 @@ button {
     font-size: 14px;
     line-height: 17px;
   }
+  .expectations-layout_cell--image {
+    min-height: 180px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -813,6 +910,23 @@ button {
   h2 {
     font-size: 16px;
     line-height: 20px;
+  }
+  h3 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 30px;
+  }
+  .expectations-layout_cell-title {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .expectations-layout_cell-text {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .expectations-layout_list-item {
+    font-size: 12px;
+    line-height: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
