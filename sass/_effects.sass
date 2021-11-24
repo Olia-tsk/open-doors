@@ -29,6 +29,32 @@
     .event-button_icon
       fill: #FF5A5A
 
+.footer
+  &-info
+    &_link:hover
+      text-decoration: underline
+    &_link:active
+      color: rgba(255, 255, 255, 0.5)
+    &_number:hover
+      text-decoration: underline
+    &_number:active
+      color: rgba(255, 255, 255, 0.5)
+
+  &-button:hover
+    border: 3px solid #fff
+    background-color: rgba(0, 91, 170, 0.068)
+    color: #fff
+
+  &-buttons
+    &_icon:hover
+      fill: #fff
+    &_link:hover
+      background-color: #428BCA
+    &_icon:active
+      fill: #428BCA
+    &_link:active
+      background-color: rgba(255, 255, 255, 0.5)
+
 // отключаем эффекты на планшетах
 @media (max-width: 780px)
   .button:active
@@ -61,3 +87,29 @@
       color: #fff
       .event-button_icon
         fill: #fff
+
+  .footer
+    &-info
+      &_link:hover
+        text-decoration: none
+      &_link:active
+        color: #fff
+      &_number:hover
+        text-decoration: none
+      &_number:active
+        color: #fff
+
+  &-button:hover
+    border: none
+    background-color: #fff
+    color: #005BAA
+
+  &-buttons
+    &_icon:hover
+      fill: #428BCA
+    &_link:hover
+      background-color: #fff
+    &_icon:active
+      fill: #428BCA
+    &_link:active
+      background-color: #fff
