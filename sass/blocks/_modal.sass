@@ -1,0 +1,130 @@
+.modal
+  position: fixed
+  top: 0
+  bottom: 0
+  right: 0
+  left: 0
+  overflow: hidden
+  overflow-y: auto
+  -webkit-overflow-scrolling: touch
+  display: flex
+  flex-flow: column nowrap
+  justify-content: flex-start
+  align-items: center
+  z-index: 99
+  margin: 30px 0
+  //visibility: hidden
+
+  &--active
+    visibility: visible
+    .modal-window
+      transform: scale(1)
+      opacity: 1
+
+  &-wrap
+    flex-shrink: 0
+
+  &-window
+    margin-top: 15px
+    padding: 30px
+    background: #fff
+    width: 550px
+    max-width: 100%
+    border-radius: 3px
+    transition: transform 0.15s ease 0s, opacity 0.15s ease 0s
+    transform: scale(1)
+
+  &-close
+    position: absolute
+    top: 10px
+    right: 10px
+    &_icon
+      width: 20px
+      height: 20px
+      fill: #005BAA
+
+  &-header
+    margin: 0
+    margin-top: 5px
+    margin-bottom: 30px
+    font-size: 24px
+    line-height: 31px
+    font-weight: normal
+    text-align: center
+
+  &-form
+    &_field
+      margin-bottom: 20px
+      & input
+        width: 100%
+    &_group
+      padding: 0
+      margin: 0
+      margin-bottom: 20px
+      list-style: none
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+    &_item
+      display: flex
+      width: 48%
+      & input
+        width: 100%
+    &_question
+      margin-bottom: 40px
+    &_agree
+      margin-bottom: 45px
+      display: flex
+      flex-direction: row
+      align-items: flex-start
+      &-check
+        position: relative
+        width: 20px
+        height: 30px
+        visibility: hidden
+        margin-right: 25px
+        &::before
+          visibility: visible
+          content: ''
+          position: absolute
+          top: 0
+          left: 0
+          width: 20px
+          height: 20px
+          border-radius: 3px
+          border: 1px solid #005BAA
+          background-repeat: no-repeat
+          background-position: center center
+          background-size: 70% 70%
+        &:checked::before
+          background-image: url('../img/icon-check.svg')
+
+  &-button
+    margin-right: auto
+    margin-left: auto
+    width: 190px
+    height: 45px
+    font-size: 18px
+    line-height: 22px
+
+.overlay
+  position: fixed
+  border: none
+  display: block
+  width: 100%
+  top: 0
+  bottom: 0
+  right: 0
+  left: 0
+  overflow: hidden
+  pointer-events: none
+  z-index: 98
+  opacity: 0
+  transition: opacity 0.15s ease
+  background-color: #000
+  &--show
+    pointer-events: auto
+    opacity: 0.6
+
+.overflow
+  overflow: hidden

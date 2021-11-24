@@ -346,6 +346,10 @@ template {
           box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -385,6 +389,43 @@ h3 {
 
 button {
   cursor: pointer;
+}
+
+input, textarea {
+  padding: 10px 15px;
+  border: 1px solid rgba(0, 91, 170, 0.3);
+  border-radius: 3px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+textarea {
+  width: 100%;
+  height: 120px;
+}
+
+input::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  color: #C5C5C5;
+}
+
+input:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  color: #C5C5C5;
+}
+
+input::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  color: #C5C5C5;
+}
+
+input::placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  color: #C5C5C5;
 }
 
 .container {
@@ -770,6 +811,203 @@ button {
   width: 60px;
   height: 60px;
   fill: #428BCA;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 99;
+  margin: 30px 0;
+}
+
+.modal--active {
+  visibility: visible;
+}
+
+.modal--active .modal-window {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+}
+
+.modal-wrap {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.modal-window {
+  margin-top: 15px;
+  padding: 30px;
+  background: #fff;
+  width: 550px;
+  max-width: 100%;
+  border-radius: 3px;
+  -webkit-transition: opacity 0.15s ease 0s, -webkit-transform 0.15s ease 0s;
+  transition: opacity 0.15s ease 0s, -webkit-transform 0.15s ease 0s;
+  transition: transform 0.15s ease 0s, opacity 0.15s ease 0s;
+  transition: transform 0.15s ease 0s, opacity 0.15s ease 0s, -webkit-transform 0.15s ease 0s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.modal-close_icon {
+  width: 20px;
+  height: 20px;
+  fill: #005BAA;
+}
+
+.modal-header {
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 31px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.modal-form_field {
+  margin-bottom: 20px;
+}
+
+.modal-form_field input {
+  width: 100%;
+}
+
+.modal-form_group {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.modal-form_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 48%;
+}
+
+.modal-form_item input {
+  width: 100%;
+}
+
+.modal-form_question {
+  margin-bottom: 40px;
+}
+
+.modal-form_agree {
+  margin-bottom: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.modal-form_agree-check {
+  position: relative;
+  width: 20px;
+  height: 30px;
+  visibility: hidden;
+  margin-right: 25px;
+}
+
+.modal-form_agree-check::before {
+  visibility: visible;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  border: 1px solid #005BAA;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 70% 70%;
+}
+
+.modal-form_agree-check:checked::before {
+  background-image: url("../img/icon-check.svg");
+}
+
+.modal-button {
+  margin-right: auto;
+  margin-left: auto;
+  width: 190px;
+  height: 45px;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.overlay {
+  position: fixed;
+  border: none;
+  display: block;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 98;
+  opacity: 0;
+  -webkit-transition: opacity 0.15s ease;
+  transition: opacity 0.15s ease;
+  background-color: #000;
+}
+
+.overlay--show {
+  pointer-events: auto;
+  opacity: 0.6;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+input:focus, textarea:focus {
+  border: 2px solid rgba(0, 91, 170, 0.8);
 }
 
 .button:active {

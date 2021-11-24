@@ -280,5 +280,110 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal" id="registration" aria-hidden="true">
+      <div class="modal-wrap">
+        <div class="modal-window" role="dialog" aria-modal="true">
+          <a href="#" class="modal-close">
+            <svg class="modal-close_icon">
+              <use xlink:href="img/sprite.svg#close"></use>
+            </svg>
+          </a>
+
+          <h5 class="modal-header">
+            Регистрация на день открытых дверей<br />“Новое поколение”
+          </h5>
+
+          <form action="send.php" method="post" class="modal-form">
+            <p class="modal-form_field">
+              <input
+                type="text"
+                name="full_name"
+                placeholder="ФИО*"
+                minlength="2"
+                required
+              />
+            </p>
+
+            <ul class="modal-form_group">
+              <li class="modal-form_item">
+                <input
+                  type="date"
+                  name="birthday"
+                  placeholder="Дата рождения*"
+                  required
+                />
+              </li>
+              <li class="modal-form_item">
+                <input
+                  type="tel"
+                  name="tel"
+                  placeholder="Номер телефона*"
+                  required
+                />
+              </li>
+            </ul>
+
+            <ul class="modal-form_group">
+              <li class="modal-form_item">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Эл. почта*"
+                  required
+                />
+              </li>
+              <li class="modal-form_item">
+                <input type="text" name="city" placeholder="Город*" required />
+              </li>
+            </ul>
+
+            <p class="modal-form_field">
+              <input
+                type="text"
+                name="school"
+                placeholder="Школа*"
+                minlength="2"
+                required
+              />
+            </p>
+
+            <p class="modal-form_question">
+              <label for="question" class="modal-form_question-title"
+                >Вопрос представителю вуза:</label
+              >
+              <textarea
+                id="question"
+                name="question"
+                class="modal-form_question-text"
+              ></textarea>
+            </p>
+
+            <p class="modal-form_agree">
+              <input
+                type="checkbox"
+                name="confidentiality"
+                id="agree"
+                class="modal-form_agree-check"
+                checked
+                required
+              />
+              <label for="agree" class="modal-form_agree-lebel"
+                >Согласен с
+                <a
+                  href="https://regulations.tusur.ru/documents/161"
+                  target="_blank"
+                  >политикой конфиденциальности</a
+                >
+                и даю согласие на обработку персональных данных</label
+              >
+            </p>
+
+            <button type="submit" class="modal-button button">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="overlay"></div>
   </body>
 </html>
