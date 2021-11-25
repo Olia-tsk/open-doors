@@ -1685,6 +1685,10 @@ input:focus, textarea:focus {
     width: 18px;
     height: 18px;
   }
+  .to-top_icon {
+    width: 30px;
+    height: 30px;
+  }
   input, textarea {
     font-size: 14px;
     line-height: 17px;
