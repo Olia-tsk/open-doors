@@ -30,6 +30,10 @@
   .footer
     &-buttons
       margin-left: 30px
+  .modal
+    &-header
+      font-size: 22px
+      line-height: 27px
 
 @media (max-width: 1400px) and (max-height: 700px)
   h1
@@ -223,6 +227,16 @@
       &_icon
         height: 45px
         width: 45px
+  .modal
+    &-window
+      width: 80%
+      margin-right: auto
+      margin-left: auto
+    &-header
+      font-size: 20px
+      line-height: 24px
+    &-button
+      height: 45px
 
 @media (max-width: 576px)
   h1
@@ -329,6 +343,38 @@
         justify-content: flex-start
       &_link
         margin-right: 20px
+  .modal
+    &-window
+      width: 83%
+    &-header
+      font-size: 18px
+      line-height: 22px
+      margin-bottom: 25px
+    &-form
+      &_question
+        margin-bottom: 30px
+        &-title
+          font-size: 14px
+          line-height: 17px
+      &_agree
+        margin-bottom: 35px
+        &-lebel
+          font-size: 14px
+          line-height: 17px
+        &-check
+          margin-right: 20px
+          width: 18px
+          height: 18px
+          &::before
+            width: 18px
+            height: 18px
+  input, textarea
+    font-size: 14px
+    line-height: 17px
+    padding: 7px 10px
+  input::placeholder
+    font-size: 14px
+    line-height: 17px
 
 @media (max-width: 460px)
   h1
@@ -423,6 +469,37 @@
     &-button
       margin-bottom: 30px
       width: 225px
+  .modal
+    &-form
+      &_field
+        margin-bottom: 15px
+      &_group
+        flex-direction: column
+        margin-bottom: 0
+      &_item
+        width: 100%
+        margin-bottom: 15px
+      &_question
+        margin-bottom: 25px
+      &_agree
+        margin-bottom: 30px
+        &-check
+          width: 15px
+          height: 15px
+          margin-right: 17px
+          &::before
+            width: 15px
+            height: 15px
+        &-lebel
+          font-size: 12px
+          line-height: 15px
+    &-header
+      font-size: 16px
+      line-height: 20px
+      margin-bottom: 20px
+    &-button
+      height: 40px
+      width: 150px
 
 @media (max-width: 375px)
   h1
@@ -470,6 +547,20 @@
       &_icon
         height: 40px
         width: 40px
+  .modal
+    margin-top: 20px
+    &-form_question-title
+      font-size: 12px
+      line-height: 15px
+    &-button
+      height: 30px
+      width: 135px
+  input, textarea
+    font-size: 12px
+    line-height: 15px
+  input::placeholder
+    font-size: 12px
+    line-height: 15px
 
 @media (max-width: 320px)
   h1
