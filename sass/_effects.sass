@@ -58,6 +58,12 @@ input:focus, textarea:focus
     &_link:active
       background: rgba(255, 255, 255, 0.5)
 
+.modal
+  &-button:hover
+    border: 3px solid #005BAA
+    background-color: #fff
+    color: #005BAA
+
 // отключаем эффекты на планшетах
 @media (max-width: 780px)
   .button:active
@@ -102,17 +108,23 @@ input:focus, textarea:focus
       &_number:active
         color: #fff
 
-  &-button:hover
-    border: none
-    background-color: #fff
-    color: #005BAA
+    &-button:hover
+      border: none
+      background-color: #fff
+      color: #005BAA
 
-  &-buttons
-    &_icon:hover
-      fill: #428BCA
-    &_link:hover
-      background: #fff
-    &_icon:active
-      fill: #428BCA
-    &_link:active
-      background: #fff
+    &-buttons
+      &_icon:hover
+        fill: #428BCA
+      &_link:hover
+        background: #fff
+      &_icon:active
+        fill: #428BCA
+      &_link:active
+        background: #fff
+
+  .modal
+    &-button:hover
+      border: none
+      background-color: #005BAA
+      color: #fff

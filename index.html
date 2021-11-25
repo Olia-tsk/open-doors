@@ -45,7 +45,9 @@
             розыгрыше призов от ТУСУР!
           </p>
         </div>
-        <button class="button header-button">Регистрация</button>
+        <button data-toggle="modal" class="button header-button">
+          Регистрация
+        </button>
       </div>
     </header>
 
@@ -190,7 +192,10 @@
           </div>
         </div>
         <div class="event-buttons">
-          <button class="button event-button event-button--register">
+          <button
+            class="button event-button event-button--register"
+            data-toggle="modal"
+          >
             Зарегистрироваться
           </button>
           <a
@@ -385,5 +390,8 @@
       </div>
     </div>
     <div class="overlay"></div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

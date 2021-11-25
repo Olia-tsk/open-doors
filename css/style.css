@@ -837,6 +837,7 @@ input::placeholder {
           align-items: center;
   z-index: 99;
   margin: 30px 0;
+  visibility: hidden;
 }
 
 .modal--active {
@@ -947,12 +948,10 @@ input::placeholder {
   position: relative;
   width: 20px;
   height: 30px;
-  visibility: hidden;
   margin-right: 25px;
 }
 
 .modal-form_agree-check::before {
-  visibility: visible;
   content: '';
   position: absolute;
   top: 0;
@@ -961,6 +960,7 @@ input::placeholder {
   height: 20px;
   border-radius: 3px;
   border: 1px solid #005BAA;
+  background-color: #fff;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 70% 70%;
@@ -1087,6 +1087,12 @@ input:focus, textarea:focus {
   background: rgba(255, 255, 255, 0.5);
 }
 
+.modal-button:hover {
+  border: 3px solid #005BAA;
+  background-color: #fff;
+  color: #005BAA;
+}
+
 @media (max-width: 780px) {
   .button:active {
     font-weight: bold;
@@ -1131,22 +1137,27 @@ input:focus, textarea:focus {
   .footer-info_number:active {
     color: #fff;
   }
-  -button:hover {
+  .footer-button:hover {
     border: none;
     background-color: #fff;
     color: #005BAA;
   }
-  -buttons_icon:hover {
+  .footer-buttons_icon:hover {
     fill: #428BCA;
   }
-  -buttons_link:hover {
+  .footer-buttons_link:hover {
     background: #fff;
   }
-  -buttons_icon:active {
+  .footer-buttons_icon:active {
     fill: #428BCA;
   }
-  -buttons_link:active {
+  .footer-buttons_link:active {
     background: #fff;
+  }
+  .modal-button:hover {
+    border: none;
+    background-color: #005BAA;
+    color: #fff;
   }
 }
 
