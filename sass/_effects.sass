@@ -64,6 +64,12 @@ input:focus, textarea:focus
     background-color: #fff
     color: #005BAA
 
+.to-top
+  &_icon:hover
+    fill: #005BAA
+    background: radial-gradient(circle, rgba(255,255,255,1) 85%, rgba(255,255,255,0) 90%)
+    border-radius: 3px
+
 // отключаем эффекты на планшетах
 @media (max-width: 780px)
   .button:active
@@ -128,3 +134,9 @@ input:focus, textarea:focus
       border: none
       background-color: #005BAA
       color: #fff
+
+  .to-top
+    &_icon:hover
+      fill: #428BCA
+      background: none
+      border-radius: 0

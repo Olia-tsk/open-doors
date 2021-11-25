@@ -814,6 +814,25 @@ input::placeholder {
   fill: #428BCA;
 }
 
+.to-top {
+  position: fixed;
+  display: none;
+  right: 20px;
+  bottom: 20px;
+  z-index: 50;
+}
+
+.to-top--visible {
+  display: block;
+}
+
+.to-top_icon {
+  fill: #428BCA;
+  width: 35px;
+  height: 35px;
+  opacity: 0.9;
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -1094,6 +1113,12 @@ input:focus, textarea:focus {
   color: #005BAA;
 }
 
+.to-top_icon:hover {
+  fill: #005BAA;
+  background: radial-gradient(circle, white 85%, rgba(255, 255, 255, 0) 90%);
+  border-radius: 3px;
+}
+
 @media (max-width: 780px) {
   .button:active {
     font-weight: bold;
@@ -1159,6 +1184,11 @@ input:focus, textarea:focus {
     border: none;
     background-color: #005BAA;
     color: #fff;
+  }
+  .to-top_icon:hover {
+    fill: #428BCA;
+    background: none;
+    border-radius: 0;
   }
 }
 

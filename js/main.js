@@ -40,4 +40,24 @@ $(document).ready(function() {
   modalButton.on("click", openModal);
   modalCloseBtn.on("click", closeModal);
 
+  // кнопка прокрутки в начало страницы
+  $(function() {
+    // scroll to top
+    $(".to-top").click(function() {
+      $("html, body").animate({ scrollTop: 0 }, 500);
+      return false;
+    });
+
+    // show to-top button
+    $(document).scroll(function() {
+      var y = $(this).scrollTop();
+      if (y > 900) {
+        $(".to-top").addClass("to-top--visible");
+      }
+        else {
+          $(".to-top").removeClass("to-top--visible");
+        }
+    })
+  })
+
 })
