@@ -1,18 +1,22 @@
 .about
-  padding-top: 140px
+  position: relative
   margin-top: 60px
   margin-bottom: 60px
-  background-color: #005baa
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/about_bg.PNG')
-  background-repeat: no-repeat, no-repeat
-  background-position: center, center
-  background-size: cover, cover
-  height: 260px
-  &-button
-    margin-left: auto
-    width: 280px
-    background-color: #fff
-    text-transform: uppercase
-    color: #005BAA
-    font-size: 24px
-    line-height: 29px
+  //background-color: #005baa
+  // background-image: url('../img/about_bg.PNG')
+  // background-repeat: no-repeat
+  // background-position: center, center
+  // background-size: cover
+  // height: 160px
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3))
+
+.parallax-window
+  min-height: 160px
+  background: transparent

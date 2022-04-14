@@ -66,9 +66,10 @@
       flex-wrap: wrap
       justify-content: space-between
     &_item
+      position: relative
       display: flex
       width: 48%
-      & input
+      & input, select
         width: 100%
     &_question
       margin-bottom: 40px
@@ -127,3 +128,59 @@
 
 .overflow
   overflow: hidden
+
+.modal-form_date
+  position: relative
+  padding-right: 0
+  &--hint
+    &::before
+      pointer-events: none
+      color: #C5C5C5
+      padding-top: 11px
+      padding-left: 15px
+      content: 'Дата рождения*'
+      position: absolute
+      top: 1px
+      left: 0
+      font-size: 16px
+      line-height: 20px
+      width: 74%
+      height: 53%
+      border-radius: 3px
+      background-color: #fff
+      vertical-align: middle
+      overflow: hidden
+  &:focus
+    &::before
+      content: ''
+      width: 0
+      height: 0
+
+select
+  padding-left: 10px
+
+.modal-form_country
+  position: relative
+  &--hint
+    &::before
+      pointer-events: none
+      color: #C5C5C5
+      padding-top: 11px
+      padding-left: 15px
+      content: 'Код страны*'
+      position: absolute
+      top: 1px
+      left: 1px
+      font-size: 16px
+      line-height: 20px
+      width: 74%
+      height: 53%
+      border-radius: 3px
+      background-color: #fff
+      vertical-align: middle
+      overflow: hidden
+  &:focus
+    &::before
+      content: ''
+      width: 0
+      height: 0
